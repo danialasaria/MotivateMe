@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:)</title>
+</head>
+<body>
+    <div id="mainContainer">
+        <p id="quote">let's do this</p>
+    </div>
+    <div id="buttonContainer">
+        <button id="reactButton" class="glow-on-hover" onclick="fetchNewQuote()">Motivate Me!</button>
+    </div>
+
+
+    <script>
+        async function fetchNewQuote() {
+            const response = await fetch("https://api.quotable.io/random");
+            const data = await response.json();
+            if (response.ok) {
+               document.getElementById("quote").innerHTML = "&#8220" + data.content + "&#8221 -" + data.author;
+            } else {
+              quote.textContent = "An error occured";
+              console.log(data);
+            }
+          }
+    </script>
+</body>
+</html>
