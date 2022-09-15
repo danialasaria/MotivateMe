@@ -1,8 +1,6 @@
 #buttonContainer {
 	display: flex;
 	justify-content: center;
-	align-content: flex-end;
-	margin-top: auto;
 }
 
 #reactButton {
@@ -15,7 +13,7 @@
 	background-color: white;
 	margin: 5px;
     width: calc(100vw - 40px);
-    height: calc(96vh - 130px);
+    height: calc(90vh - 130px);
 }
 
 #quote {
