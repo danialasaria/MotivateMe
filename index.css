@@ -5,7 +5,14 @@
 
 #reactButton {
 	background-color: #00f;
-	font-size: 60px;
+	font-size: 45px;
+}
+
+@media only screen and (min-width: 410px) {
+    #reactButton {
+        background-color: #00f;
+        font-size: 60px;
+    }
 }
 
 #mainContainer {
