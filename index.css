@@ -14,23 +14,36 @@
 	position: relative;
 	background-color: white;
 	margin: 5px;
-	width: calc(100vw - 40px);
-	height: calc(96vh - 130px);
+    width: calc(100vw - 40px);
+    height: calc(96vh - 130px);
 }
 
-
 #quote {
-	position: relative;
-	text-align: center;
-	font-size: 60px;
-	top: 30%;
-	color: #f2f2f2; 
-	background: #ff4a4a; 
-	font-size: 75px; 
-	line-height: 74px; 
-	font-weight: 700; 
-	margin: 0 5px 24px; 
-	padding: 10px; margin: 0 5px 24px; font-family: 'Libre Baskerville', serif;
+    position: relative;
+    text-align: center;
+    font-size: 35px;
+    top: 20%;
+    color: #f2f2f2; 
+    background: #ff4a4a; 
+    font-weight: 700; 
+    margin: 0 5px 24px; 
+    margin: 0 5px 24px; 
+    font-family: 'Libre Baskerville', serif;
+}
+
+@media only screen and (min-width: 768px) {
+    #quote {
+        position: relative;
+        text-align: center;
+        font-size: 45px;
+        top: 5%;
+        color: #f2f2f2; 
+        background: #ff4a4a; 
+        font-weight: 700; 
+        margin: 0 5px 24px; 
+        margin: 0 5px 24px; 
+        font-family: 'Libre Baskerville', serif;
+    }
 }
 
 .glow-on-hover {
